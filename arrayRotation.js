@@ -14,6 +14,11 @@ function rotateArray(side, iterations, ar){
         console.log("Error: 'iterations' is not a number!");
         return;
     }
+    
+    if(side !== "left" &&  side !== "right"){
+        console.log("Error: Unable to rotate array in the specified direction '"+side+"'.");
+        return;
+    }
 
     let tempVar;
     if(side === "left"){
@@ -28,7 +33,8 @@ function rotateArray(side, iterations, ar){
         }
         return ar;
     }
-    else if(side === "right"){
+    
+    if(side === "right"){
         for(let iter = 0; iter < iterations; iter++){
             tempVar = ar[ar.length -1];
             for(let j = ar.length - 1; j >= 1; j--){
@@ -39,9 +45,5 @@ function rotateArray(side, iterations, ar){
             console.log(ar);
         } 
         return ar;
-    }
-    else{
-        console.log("Error: Unable to rotate array in the specified direction '"+side+"'.");
-        return;
     }
 }
