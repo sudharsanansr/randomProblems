@@ -9,3 +9,6 @@ secondLargest.js
 
 https://www.hackerrank.com/challenges/compare-the-triplets/problem?h_r=next-challenge&h_v=zen
 triplets.js
+
+Delete the elements in a array whose sum is equal to zero
+sumZeroArray.js
