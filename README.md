@@ -12,3 +12,6 @@ triplets.js
 
 Delete the elements in a array whose sum is equal to zero
 sumZeroArray.js
+
+https://www.hackerrank.com/challenges/diagonal-difference/problem?h_r=next-challenge&h_v=zen
+diagElementSum.js
