@@ -21,3 +21,6 @@ plusMinus.js
 
 https://www.hackerrank.com/challenges/mini-max-sum/problem
 minMax.js
+
+Flatten the provided multidimensional array
+flattenArray.js
