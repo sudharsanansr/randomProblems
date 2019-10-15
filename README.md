@@ -18,3 +18,6 @@ diagElementSum.js
 
 https://www.hackerrank.com/challenges/plus-minus/problem?h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
 plusMinus.js
+
+https://www.hackerrank.com/challenges/mini-max-sum/problem
+minMax.js
