@@ -27,3 +27,6 @@ flattenArray.js
 
 All possible triplets within the input array shared which sums up to the "SUM" value
 tripletSum.js
+
+https://www.hackerrank.com/challenges/staircase/problem
+stairCase.js
