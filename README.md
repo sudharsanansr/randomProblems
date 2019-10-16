@@ -30,3 +30,6 @@ tripletSum.js
 
 https://www.hackerrank.com/challenges/staircase/problem
 stairCase.js
+
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem
+https://www.hackerrank.com/rest/contests/master/challenges/birthday-cake-candles/hackers/argyle_socks/download_solution?primary=true
