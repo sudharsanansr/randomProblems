@@ -50,4 +50,9 @@ for(let i = 0; i < txt.length; i++){
         }
     }
 }
+
+if(arr.length !== 0){
+    flag = false;
+}
+
 console.log(flag);
