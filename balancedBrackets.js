@@ -2,7 +2,7 @@
 https://www.hackerrank.com/challenges/balanced-brackets/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=stacks-queues
 */
 
-let txt = "{{([])}}";
+let txt = "{(([])[])[]}[]";
 //let txt = '[{[)}]'
 txt = txt.split("");
 
@@ -27,25 +27,27 @@ txt = txt.filter(function(t){
     }
 })
 
-console.log(txt);
 
-let a = "[]";
-let b = "{}";
-let c = "()";
+let arr = [];
+let map = {
+    "{" : "}",
+    "[" : "]",
+    "(" : ")"
+};
+
 let flag = true;
 
-for(let i = 0; i < (txt.length)/2; i++){  
-    let j = (txt.length - (i+1));
-    console.log("i = "+i+", j = "+j);
-    let str = txt[i].concat(txt[j]).trim();
-    if((str == a) || (str == b) || (str == c)){
-        continue;
+for(let i = 0; i < txt.length; i++){
+    if((txt[i].indexOf("[") > -1) || (txt[i].indexOf("(") > -1) || (txt[i].indexOf("{") > -1)){
+        arr.push(txt[i]);
     }
     else{
-        flag = false;
-        break;
+        let last = arr.pop();
+        console.log(last+" "+map[last]);
+        if((txt[i] != map[last])){
+            flag = false;
+            break;
+        }
     }
-    j--;
 }
-
 console.log(flag);
