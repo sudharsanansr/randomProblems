@@ -1,8 +1,12 @@
-//https://www.youtube.com/watch?v=t2CEgPsws3U&t=1322s
+//https://www.youtube.com/watch?v=t2CEgPsws3U&t=1164s
 
 let priorityQueue = function(){
     this.collection = [];
     this.count = 0;
+
+    this.printQueue = function(){
+        console.log(this.collection);
+    }
 
     this.enqueue = function(element){
         if(this.count === 0){
@@ -10,26 +14,18 @@ let priorityQueue = function(){
             this.count++;
         }
         else{
-            let placeHolder = 0;
-            if(element[1] === 0){
-                this.collection.unshift(element);
-            }
-            else{
-                for(let i = 0; i < this.collection.length; i++){
-                    if(element[1] <= this.collection[i][1]){
-                        placeHolder = i;
-                        break;      
-                    }
+            let added = false; 
+            for(let i = 0; i < this.collection.length; i++){
+                if(element[1] < this.collection[i][1]){
+                    this.collection.splice(i, 0, element);
+                    added = true;
+                    break;      
                 }
             }
 
-            if((element[1] !== 0) && placeHolder === 0){
+            if(!added){
                 this.collection.push(element);
             }
-
-            if(placeHolder > 0){
-                this.collection.splice(placeHolder, 0, element);
-            } 
             this.count++;
         }
     }
