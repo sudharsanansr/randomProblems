@@ -1,4 +1,4 @@
-//https://www.youtube.com/watch?v=t2CEgPsws3U&t=1164s
+//https://www.youtube.com/watch?v=t2CEgPsws3U&t=1322s
 
 let priorityQueue = function(){
     this.collection = [];
