@@ -33,3 +33,7 @@ stairCase.js
 
 https://www.hackerrank.com/challenges/birthday-cake-candles/problem
 https://www.hackerrank.com/rest/contests/master/challenges/birthday-cake-candles/hackers/argyle_socks/download_solution?primary=true
+
+
+https://github.com/sudharsanansr/Front-end-Developer-Interview-Questions/blob/master/src/questions/javascript-questions.md
+duplicateArray.js
