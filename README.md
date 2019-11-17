@@ -37,3 +37,7 @@ https://www.hackerrank.com/rest/contests/master/challenges/birthday-cake-candles
 
 https://github.com/sudharsanansr/Front-end-Developer-Interview-Questions/blob/master/src/questions/javascript-questions.md
 duplicateArray.js
+
+https://www.hackerrank.com/challenges/strange-code/problem
+strangeCounter.js
+
