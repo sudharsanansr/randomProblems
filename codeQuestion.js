@@ -18,8 +18,14 @@ function rearrangeArray(inputArray){
     var outputArray = [];
     for(var i = 0; i < inputArray.length / 2; i++){
         var temp = inputArray.indexOf(-(inputArray[i]));
-        outputArray.push(inputArray[i]);
-        outputArray.push(inputArray[temp]);
+        if(inputArray[i] > inputArray[temp]){
+            outputArray.push(inputArray[i]);
+            outputArray.push(inputArray[temp]);
+        }
+        else{
+            outputArray.push(inputArray[i]);
+            outputArray.push(inputArray[temp]);
+        }  
     }
     return outputArray;
 }
