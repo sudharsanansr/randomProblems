@@ -23,13 +23,8 @@ function rearrangeArray(inputArray){
             outputArray.push(inputArray[temp]);
         }
         else{
-<<<<<<< HEAD
             outputArray.push(inputArray[temp]);
             outputArray.push(inputArray[i]);
-=======
-            outputArray.push(inputArray[i]);
-            outputArray.push(inputArray[temp]);
->>>>>>> 69eef93099566258d2866a46885983777c72e36b
         }  
     }
     return outputArray;
