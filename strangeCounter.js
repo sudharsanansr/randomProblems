@@ -1,5 +1,4 @@
 let valArr = [];
-valArr.push(null);
 function strangeCounter(n){
 
     function getValue(n){
