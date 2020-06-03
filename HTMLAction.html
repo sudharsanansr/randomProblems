@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BoxOnBox</title>
+    <style>
+        .red-box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            z-index: 3;
+            border-radius: 100px;
+            box-shadow: 19px 16px blueviolet;
+        }
+
+        .blue-box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            position: relative;
+            bottom: 160px;
+            border-radius: 30px;
+            left:40px;
+            z-index: 2;
+            box-shadow: 18px 20px 0px red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="red-box"></div>
+        <div class ="blue-box"></div>
+    </main>
+</body>
+</html>
