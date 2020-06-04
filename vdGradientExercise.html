@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gradient Exercises</title>
+    <style>
+        body{
+            background-color:lightgray;
+        }
+
+        .round {
+            width: 70%;
+            margin: 50px auto;
+            height: 200px;
+        }
+
+        .round.expand{
+            background: linear-gradient(45deg, rgb(196, 164, 164),rgb(148, 90, 90), rgb(107, 21, 21));
+        }
+
+        .round.contract{
+            background: linear-gradient(45deg, rgb(145, 170, 177), blue);
+        }
+
+        .round.expand:hover{
+            transform: scale(2);
+        }
+        
+        .round.contract:hover{
+            transform: scale(0.5);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="round expand"></div>
+    <div class="round contract"></div>
+</body>
+</html>
