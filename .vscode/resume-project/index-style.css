@@ -48,10 +48,10 @@ nav a{
     top: 20px;
 }
 .container-body-left{
-    width: 50%;
+    width: 55%;
 }
 .container-body-right{
-    width: 50%;
+    width: 45%;
     background: url(./imgs/img1.svg) no-repeat center;
 }
 .container-intro, .container-intro-text{
