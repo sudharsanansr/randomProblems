@@ -1,0 +1,65 @@
+body{        
+    padding-top: 60px;
+    padding-bottom: 40px;
+    background-color: #BCB8B1;
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+    padding: 10px 0;
+    color: #fff;
+    height:60px;
+}
+.fixed-header{
+    top: 0;
+    background: #463F3A;
+}
+.fixed-footer{
+    bottom: 0;
+    background: #e0afa0
+}
+.container{
+    width: 80%;
+    margin: 0 auto; /* Center the DIV horizontally */
+}
+.container-body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container-intro{
+    font-family: 'Sacramento', cursive;
+    font-size: 120px;
+}
+.container-intro-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 80px;
+    color: white
+}
+nav a{
+    color: #fff;
+    padding: 7px 25px;
+    display: inline-block;
+    font-family: 'Indie Flower', cursive;
+}
+.container-nav-links{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+.container-body-left{
+    width: 50%;
+}
+.container-body-right{
+    width: 50%;
+    background: url(./imgs/img1.svg) no-repeat center;
+}
+.container-intro, .container-intro-text{
+    margin: 80px;
+}
+.fixed-footer{
+    color:black;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 16px;
+}
