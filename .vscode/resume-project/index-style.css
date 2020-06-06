@@ -1,3 +1,6 @@
+* {
+    box-shadow: border-box;
+}
 body{        
     padding-top: 60px;
     padding-bottom: 40px;
@@ -7,12 +10,12 @@ body{
     width: 100%;
     position: fixed;        
     padding: 10px 0;
-    color: #fff;
-    height:60px;
+    height:5%;
 }
 .fixed-header{
     top: 0;
     background: #463F3A;
+    color: #fff;
 }
 .fixed-footer{
     bottom: 0;
@@ -29,18 +32,26 @@ body{
 }
 .container-intro{
     font-family: 'Sacramento', cursive;
-    font-size: 120px;
+    text-shadow: -3px 1px 10px #9683ec;
 }
 .container-intro-text{
     font-family: 'Indie Flower', cursive;
+    color: white;
+    text-shadow: 5px 0px 12px black;
+}
+.container-intro,.container-intro-text{
     font-size: 80px;
-    color: white
 }
 nav a{
     color: #fff;
     padding: 7px 25px;
     display: inline-block;
+    text-decoration: none;
     font-family: 'Indie Flower', cursive;
+}
+nav a:hover{
+    color: #9683ec;
+    font-style: italic;
 }
 .container-nav-links{
     position: fixed;
@@ -62,4 +73,18 @@ nav a{
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 16px;
+}
+.fa.fa-github:hover,.fa.fa-twitter:hover,.fa.fa-envelope:hover{
+    color:#8a817c;
+    transform: scale(.8);
+}
+.fixed-footer a{
+    text-decoration: none;
+    font-family: 'Indie Flower', cursive;
+    margin: 1em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
