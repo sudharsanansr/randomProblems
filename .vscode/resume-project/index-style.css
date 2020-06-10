@@ -31,7 +31,7 @@ body{
     flex-wrap: wrap;
     flex-direction: row;
     height: 84vh;
-    padding: 3vh;
+    padding: 8vh 0;
 }
 .container-intro{
     font-family: 'Sacramento', cursive;
@@ -61,13 +61,24 @@ nav a:hover{
     right: 20px;
     top: 20px;
 }
-.container-body-left{
-    width: 55%;
+.container-body-left, .container-body-right{
+    max-width: 50vw;
+    height: 42vh;
 }
-.container-body-right{
-    width: 45%;
-    background: url(./imgs/img1.svg) no-repeat center;
+
+.flex-container{
+    -webkit-flex: 1; /* Safari */
+    -ms-flex: 1; /* IE 10 */
+    flex: 1;
 }
+
+.container-body-right img{
+    repeat: no-repeat;
+    align-content: center;
+    max-width: 100%;
+    height: auto;
+}
+
 .container-intro, .container-intro-text{
     margin: 80px;
 }
