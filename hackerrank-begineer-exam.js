@@ -21,9 +21,7 @@ function getTeams(year, k) {
 
     }).on('error', (e) => {
         console.error(e);
-    });
-
-    
+    });    
 }
 
 getTeams(2015, 4);

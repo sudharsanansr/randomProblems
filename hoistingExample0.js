@@ -4,8 +4,6 @@ console.log(typeof y)
 console.log(x + y);
 var y = 12;
 
->>
-
 //Converted as
 
 /*
