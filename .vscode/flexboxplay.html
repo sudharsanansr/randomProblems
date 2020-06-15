@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flexboxplay</title>
+    <style>
+
+        .flexbox-container{
+            height: 20vh;
+            width: 100vw;
+        }
+
+        .flexbox-container > div{
+            border-radius: 2vh;
+        }
+
+        .container > div{
+            margin: 0.5em 0.5em;
+            display: flex;
+            flex-direction: row;
+            background-color:transparent;
+        }
+
+        #item1 {
+            height: 20vh;
+            width: 12vw;
+            background-color: royalblue ;
+            order: 5;
+        }
+
+        #item2 {
+            height: 20vh;
+            width: 12vw;
+            background-color: yellowgreen;
+            order: 4;
+        }
+
+        #item3 {
+            height: 20vh;
+            width: 12vw;
+            background-color: orangered;
+            order: 3;
+        }
+        
+        #item4 {
+            height: 20vh;
+            width: 12vw;
+            background-color: salmon;
+            order: 2;
+        }
+
+        #item5 {
+            height: 20vh;
+            width: 12vw;
+            background-color: rebeccapurple;
+            order: 1;
+        }
+
+        #item6 {
+            height: 20vh;
+            width: 12vw;
+            background-color: cornflowerblue;
+            order: 7;
+        }
+
+        #item7 {
+            height: 20vh;
+            width: 12vw;
+            background-color: chocolate;
+            order: 6;
+        }
+
+        #item8 {
+            height: 20vh;
+            width: 12vw;
+            background-color: cadetblue;
+            order: 10;
+        }
+
+        #item9 {
+            height: 20vh;
+            width: 12vw;
+            background-color: goldenrod;
+            order: 9;
+        }
+
+        #item10 {
+            height: 20vh;
+            width: 12vw;
+            background-color: green;
+            order: 8;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="flexbox-container">
+            <div id="item1"></div>
+            <div id="item2"></div>
+            <div id="item3"></div>
+            <div id="item4"></div>
+            <div id="item5"></div>
+            <div id="item6"></div>
+            <div id="item7"></div>
+            <div id="item8"></div>
+            <div id="item9"></div>
+            <div id="item10"></div>
+        </div>
+    </main>
+</body>
+</html>
