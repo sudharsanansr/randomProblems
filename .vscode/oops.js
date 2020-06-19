@@ -127,3 +127,77 @@ let starLord = new GuardiansOfTheGalaxy();
 
 console.log(ironMan.constructor === Avengers); //returns false because constructor points to native object;
 console.log(starLord.constructor === GuardiansOfTheGalaxy); //returns true because constructor points to same object;
+
+
+//Using is prototype of constructor -> instance
+function Student(type){
+    this.type = type;
+}
+
+let schoolStudent = new Student();
+
+console.log(Student.prototype.isPrototypeOf(schoolStudent));
+console.log(Avengers.prototype.isPrototypeOf(starLord)); //Check above lines to see why the answer is false
+
+
+
+//Understanding the prototype chain
+function Dog(name) {
+  this.name = name;
+}
+
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle);  // yields true
+
+// Fix the code below so that it evaluates to true
+console.log(Object.prototype.isPrototypeOf(Dog.prototype));
+
+//Use Closure to Protect Properties Within an Object from Being Modified ExternallyPassed
+
+function BankAccount(){
+    let accNumber = 'ABCD0123';
+    this.getAccNumber = function(){
+        return accNumber;
+    };
+}
+
+let myAcc = new BankAccount();
+console.log(myAcc);
+console.log(myAcc.getAccNumber());
+
+//using IIFE to create a module that
+
+let funModule = (function(){
+    return{
+        isCuteMixin: function(obj){
+            obj.isCute = function(){
+                return true;
+            }
+        },
+        singMixin: function(obj){
+            obj.sing = function(){
+                console.log('Singing to an awesome tune');
+            }
+        },
+    }
+})();
+
+console.log(funModule);
+
+var obj1 = {
+    name: "Taylor"
+}
+
+var obj2 = {
+    name: "Brandon"
+}
+
+console.log(obj1);
+console.log(obj2);
+console.log(funModule.isCuteMixin(obj1));
+console.log(funModule.singMixin(obj2));
+console.log(obj1);
+console.log(obj2);
+console.log(obj1.isCute());
+console.log(obj2.sing());
