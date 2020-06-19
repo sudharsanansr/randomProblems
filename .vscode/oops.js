@@ -67,7 +67,7 @@ let macbook = new LaptopComputer('Apple','2017 Macbook Pro 15 inch');
 
 let ownComputerProps = [];
 let customComputerProps = [];
-for(props in macbook){
+for(let props in macbook){
     if(macbook.hasOwnProperty(props)){
         ownComputerProps.push(props);
     }
@@ -77,3 +77,35 @@ for(props in macbook){
 }
 console.log(ownComputerProps);
 console.log(customComputerProps);
+
+//Undertanding the constructor properties
+
+function Movie(type,length){
+    this.type = type;
+    this.length = length;
+}
+
+let comicMovie = new Movie('Comedy','2H 44Mins');
+
+console.log(comicMovie);
+console.log(comicMovie.constructor);
+console.log(comicMovie.constructor === Movie);
+console.log(typeof (comicMovie.constructor));
+
+//Setting up prototype properties all in once with a new object
+
+function Avengers(){
+};
+
+Avengers.prototype = {
+    isSuperHeroTeam : true,
+    teamQuote: function(){
+        return 'Avengers Assemble';
+    }
+}
+
+console.log(Avengers.prototype.teamQuote()); //Accessing without initiating an instance object.
+
+let ironMan = new Avengers();
+console.log(ironMan.isSuperHeroTeam);
+console.log(ironMan.teamQuote()); //Accessing with initiating an instance object.
