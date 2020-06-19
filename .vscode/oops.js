@@ -109,3 +109,21 @@ console.log(Avengers.prototype.teamQuote()); //Accessing without initiating an i
 let ironMan = new Avengers();
 console.log(ironMan.isSuperHeroTeam);
 console.log(ironMan.teamQuote()); //Accessing with initiating an instance object.
+
+//One thing to remember in setting up the prototype with a new Object, the constructor reference will be pointed to Object, which is the parent constructor for all objects in JavaScript
+
+function GuardiansOfTheGalaxy(){
+}
+
+GuardiansOfTheGalaxy.prototype = {
+    constructor: GuardiansOfTheGalaxy,
+    isSuperHeroTeam: true,
+    teamQuote: function(){
+        return 'Go Guardians Go';
+    }
+}
+
+let starLord = new GuardiansOfTheGalaxy();
+
+console.log(ironMan.constructor === Avengers); //returns false because constructor points to native object;
+console.log(starLord.constructor === GuardiansOfTheGalaxy); //returns true because constructor points to same object;
