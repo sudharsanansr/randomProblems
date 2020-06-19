@@ -54,3 +54,26 @@ Pet.prototype.isHumanFriendly = true;
 let doggy = new Pet('Beagle','Dog',4);
 console.log(doggy); //Not see at the object level
 console.log(doggy.isHumanFriendly); //Available at the prototype level.
+
+//iterating over all sorts of properties
+
+function LaptopComputer(manufacturer,model){ //Own properties
+    this.manufacturer = manufacturer;
+    this.model = model;
+}
+LaptopComputer.prototype.isKeyBoardSupported = true; //properties inherited from prototype chain
+
+let macbook = new LaptopComputer('Apple','2017 Macbook Pro 15 inch');
+
+let ownComputerProps = [];
+let customComputerProps = [];
+for(props in macbook){
+    if(macbook.hasOwnProperty(props)){
+        ownComputerProps.push(props);
+    }
+    else{
+        customComputerProps.push(props);
+    }
+}
+console.log(ownComputerProps);
+console.log(customComputerProps);
