@@ -54,6 +54,40 @@ function urlSlug(title) {
 }
 // Only change code above this line
 console.log(urlSlug(globalTitle));
-console.log(urlSlug(" Winter Is  Coming"));
+console.log(urlSlug(" Winter Is  Coming")); //Failing for this input, not well thought.
 console.log(urlSlug("A Mind Needs Books Like A Sword Needs A Whetstone"));
 console.log(urlSlug("Hold The Door"));
+
+/*
+// the global variable
+var globalTitle = "Winter Is Coming";
+
+// Add your code below this line
+function urlSlug(title) {
+  return title
+    .split(/\W/)
+    .filter(obj => {
+      return obj !== "";
+    })
+    .join("-")
+    .toLowerCase();
+}
+// Add your code above this line
+
+var winterComing = urlSlug(globalTitle); //Should be "winter-is-coming"
+
+// the global variable
+var globalTitle = "Winter Is Coming";
+
+// Add your code below this line
+function urlSlug(title) {
+  return title
+    .toLowerCase()
+    .trim()
+    .split(/\s+/)
+    .join("-");
+}
+// Add your code above this line
+
+var winterComing = urlSlug(globalTitle); //Should be "winter-is-coming"
+*/
