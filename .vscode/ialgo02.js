@@ -30,4 +30,4 @@ function destroyer(arr) {
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
 
-//Conti
+//Continue with this tomorrow
