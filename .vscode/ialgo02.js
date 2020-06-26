@@ -16,18 +16,31 @@ destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugat
 */
 
 function destroyer(arr) {
-    let newArray = [];
-    for(let i = 1; i < arguments.length; i++){
-        let tempArray = arr.forEach((item,index,array) => {
-            if(array[index] == arguments[i]){
-                newArray.push(index);
-            }
-        });
+  var args = Array.prototype.slice.call(arguments);
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var j = 0; j < args.length; j++) {
+      if (arr[i] === args[j]) {
+        delete arr[i];
+      }
     }
-    console.log(newArray.sort());
+  }
+  console.log(arr);
+  let newArr = arr.filter(Boolean);
+  console.log(newArr);
+  return newArr;
 }
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3);
+destroyer(["possum", "trollo", 12, "safari", "hotdog", 92, 65, "grandma", "bugati", "trojan", "yacht"], "yacht", "possum", "trollo", "safari", "hotdog", "grandma", "bugati", "trojan")
 
 //Continue with this tomorrow
+
+let destroyer2 = (arr, ...valsToRemove) => arr.filter(elem => !valsToRemove.includes(elem));
+
+console.log(destroyer2([1, 2, 3, 5, 1, 2, 3], 2, 3));
+
+/*
+https://www.freecodecamp.org/forum/t/freecodecamp-challenge-guide-seek-and-destroy/16046
+*/
