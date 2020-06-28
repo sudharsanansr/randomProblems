@@ -45,3 +45,5 @@ console.log(translatePigLatin("paragraphs"));
 console.log(translatePigLatin("glove"));
 console.log(translatePigLatin("schwartz"));
 console.log(translatePigLatin("rhythm"));
+
+//https://freecodecamp.org/forum/t/freecodecamp-challenge-guide-pig-latin/16039
