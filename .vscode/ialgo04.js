@@ -12,16 +12,14 @@ spinalCase("AllThe-small Things") should return "all-the-small-things".
 */
 
 function spinalCase(str) {
-  str = str.split('');
-  console.log(str);
-  let i = 0;
-  while(i < str.length) {
-    str.shift().toLowerCase();
-  }
+  return str
+  .replace(/([a-z])([A-Z])/g,"$1 $2")
+  .toLowerCase()
+  .replace(/[\W_]/g,'-');
 }
 
-spinalCase("This Is Spinal Tap");
-spinalCase("thisIsSpinalTap");
-spinalCase("The_Andy_Griffith_Show");
-spinalCase("Teletubbies say Eh-oh");
-spinalCase("AllThe-small Things");
+console.log(spinalCase("This Is Spinal Tap"));
+console.log(spinalCase("thisIsSpinalTap"));
+console.log(spinalCase("The_Andy_Griffith_Show"));
+console.log(spinalCase("Teletubbies say Eh-oh"));
+console.log(spinalCase("AllThe-small Things"));
