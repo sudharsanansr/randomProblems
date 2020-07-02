@@ -18,7 +18,7 @@ smallestCommons([23, 18]) should return 6056820.
 
 function smallestCommons(arr) {
   console.log('arr : '+arr);
-  
+
   arr = arr.sort((a,b) => {
     if(a < b){
       return -1
@@ -59,3 +59,4 @@ function smallestCommons(arr) {
 smallestCommons([1,5]);
 smallestCommons([23, 18]);
 smallestCommons([2, 10]);
+smallestCommons([1, 13]);
