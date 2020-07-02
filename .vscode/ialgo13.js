@@ -41,22 +41,13 @@ function smallestCommons(arr) {
   }
   console.log(j-1);
   return j-1;
-
-  /*
-  for(let j = arr[1]; flag; j++){
-    console.log(j);
-    flag = newArray.every(item => j % item == 0);
-    console.log(flag+' '+j);
-    if(flag){
-      console.log(j);
-      return j;
-    }
-  }
-  */
 }
-
 
 smallestCommons([1,5]);
 smallestCommons([23, 18]);
 smallestCommons([2, 10]);
 smallestCommons([1, 13]);
+
+/*
+https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-smallest-common-multiple/16075
+*/
