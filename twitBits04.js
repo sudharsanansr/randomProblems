@@ -1,5 +1,5 @@
-//printStars(4);
-//printStars(6);
+printStars(4);
+printStars(6);
 printStars(0);
 /*
 
