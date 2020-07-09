@@ -1,6 +1,6 @@
-var myNum = 10;
+var myNum = 100;
 
-function myName(){
+var myNum = function(){
     console.log(10/5);
 }
 
