@@ -5,7 +5,8 @@ class Greetings {
     }
 
     sayHello(){
-        return `${this.getRandomGreeing()} ${this.firstName} ${this.lastName}`;
+        let greet = this.getRandomGreeting();
+        return `${greet}, ${this.firstName} ${this.lastName}`;
     }
 
     getRandomGreeting(){
