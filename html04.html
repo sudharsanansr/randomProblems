@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Form</title>
+</head>
+<body>
+    <form action="https://www.example.com/login.php" method="post">
+        <p>I hereby agree to the terms and conditions mentioned above.</p>
+    </form>
+
+    <form action="https://www.example.com/login.php" method="post">
+        <p>Username:<input type="text" name="username" id="username" maxlength="12"></p>
+        <p>Password:<input type="password" name="password" id="password" maxlength="8"></p>
+        <p>Provide your comments:</p>
+        <textarea name="comments" id="comments" cols="20" rows=""></textarea>
+        <p>Please select your favourite genre</p>
+        <br />
+        <input type="radio" name="genre" value="Rock" checked="checked"/>Rock
+        <!--<input type="radio" name="genre" value="Rock"/>Rock</input>-->
+        <input type="radio" name="genre" value="Pop"/>Pop
+        <!--<input type="radio" name="genre" value="Pop"/>Pop</input>-->
+        <input type="radio" name="genre" value="Jazz"/>Jazz
+        <!--<input type="radio" name="genre" value="Jazz"/>Jazz</input>-->
+    </form>
+
+    <form action="https://www.example.com/profile.php">
+        <p>Person type?</p>
+        <input type="checkbox" name="pet_type" value="cat" checked="checked"/>Cat Person
+        <input type="checkbox" name="pet_type" value="dog"/>Dog Person
+        <input type="checkbox" name="pet_type" value="both"/>Both
+    </form>
+
+    <form action="https://www.example.com/submit_device.php">
+        <p>What device are you using right now?</p>
+        <select name="device_type">
+            <option value="ipad">iPad</option>
+            <option value="iphone" selected="selected">iPhone</option>
+            <option value="mac">Macbook</option>
+        </select>
+    </form>
+
+    <form action="https://www.example.com/submit_device.php">
+        <p>What device you have in your arsenal?</p>
+        <select name="device_type" multiple="multiple">
+            <option value="ipad" selected="selected">iPad</option>
+            <option value="iphone">iPhone</option>
+            <option value="mac" selected="selected">Macbook</option>
+            <option value="android">Android Phone</option>
+            <option value="pixel">Google Pixel</option>
+            <option value="android_tab">Android Tablet</option>
+        </select>
+    </form>
+
+</body>
+</html>
