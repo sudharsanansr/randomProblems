@@ -55,5 +55,41 @@
         </select>
     </form>
 
+    <form action="https://www.example.com/upload.php" method="post">
+        <p>Upload the file/document here</p>
+        <input type="file" name="upload_document" id="upload_document"/><br />
+        <input type="submit" value="Upload">
+    </form>
+
+    <form action="https://www.example.com/subscribe.php" method="post">
+        <p>Subscribe to email list</p>
+        <input type="text" name="email"/>
+        <input type="submit" name="subscribe" value="subscribe"/>
+    </form>
+
+    <form action="https://www.example.com/label.php" method="post">
+        <label>Name: <input type="text" name="name"/></label><br />
+        Gender: 
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="male" id="female">
+        <label for="male">Male</label>
+    </form>
+
+    <form action="www.exampleforms.com" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label>User Name:<br />
+                <input type="text" name="username" id="username"/>
+            </label><br />
+            <label>Email:<br />
+                <input type="text" name="email" id="email"/>
+            </label><br />
+            <label>Address:<br />
+                <input type="text" name="address" id="address"/>
+            </label>
+        </fieldset>
+    </form>
+
 </body>
 </html>
