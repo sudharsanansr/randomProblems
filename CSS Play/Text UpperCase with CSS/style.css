@@ -1,0 +1,16 @@
+body{
+    margin: 10px 10px;
+    background-color: bisque;
+}
+
+article>span{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+figure>img{
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: auto;
+    height: auto;
+}   
