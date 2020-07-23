@@ -1,15 +1,21 @@
 //Fibonacci using Memoization
+let cache = {};
 
-function findnthfibonacci (n) {
-
-    if(n == 1 || n == 2){
-        return 1;
+function fibonacci (n) {
+    if(typeof cache[n] != 'undefined'){
+        return cache[n];
     }
     else{
-        return findnthfibonacci(n - 1) + findnthfibonacci(n - 2);
+        if(n == 1 || n == 2){
+            return 1;
+        }
+        else{
+            cache[n] = fibonacci(n - 1) + fibonacci(n - 2);
+            return cache[n];
+        }
     }
 }
 
-for(let i = 1; i < 21; i++){
-    console.log(i + ' :: ' + findnthfibonacci(i));
+for(let i = 1; i < 1200; i++){
+    console.log(i + ' :: ' + fibonacci(i));
 }
