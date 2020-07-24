@@ -49,5 +49,8 @@ function sym(args) {
     });
 }
 
-sym([1, 2, 3], [5, 2, 1, 4]);
-sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]);
+console.log(sym([1, 2, 3], [5, 2, 1, 4]));
+console.log(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3], [5, 3, 9, 8], [1]));
+console.log(sym([3, 3, 3, 2, 5], [2, 1, 5, 7], [3, 4, 6, 6], [1, 2, 3]));
+
+//https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-find-the-symmetric-difference/301611/2
