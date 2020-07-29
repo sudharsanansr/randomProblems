@@ -1,0 +1,109 @@
+<p>You can do the following with this catalog request.<br /><br />1. Enable/Disable Monitoring<br />2. Update Device Priority<br />3. Update Monitoring Attributes</p>
+<p>You can submit the request either if you <em>own/manage/support</em> the CI.<br /><br /><strong><span style="color: #ff0000;">Note:</span> </strong>With this request, you can upgrade the device priority only till <strong><em>P2</em></strong>, if you would like to increase the priority further. Please get in touch with the SRT teams</p>
+<h3>Event Management - Incident Priority Calculation Matrix</h3>
+<table style="border: 1px solid black;padding: 5px;">
+   <thead style="text-align: left;">
+      <tr>
+         <th style="border: 1px solid black;padding: 5px;">LM Alert Severity</th>
+         <th style="border: 1px solid black;padding: 5px;">Alert Type</th>
+         <th style="border: 1px solid black;padding: 5px;">Device Priority set in CMDB</th>
+         <th style="border: 1px solid black;padding: 5px;">SURF Incident Priority</th>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">1</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">1</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Critical</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Error</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">1</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;">Error</td>
+         <td style="border: 1px solid black;">All except Node Down</td>
+         <td style="border: 1px solid black;">2</td>
+         <td style="border: 1px solid black;">3</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Error</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Error</td>
+         <td style="border: 1px solid black;padding: 5px;">All except Node Down</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Warning</td>
+         <td style="border: 1px solid black;padding: 5px;">All</td>
+         <td style="border: 1px solid black;padding: 5px;">1</td>
+         <td style="border: 1px solid black;padding: 5px;">Alert Only</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Warning</td>
+         <td style="border: 1px solid black;padding: 5px;">All</td>
+         <td style="border: 1px solid black;padding: 5px;">2</td>
+         <td style="border: 1px solid black;padding: 5px;">Alert Only</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Warning</td>
+         <td style="border: 1px solid black;padding: 5px;">All</td>
+         <td style="border: 1px solid black;padding: 5px;">3</td>
+         <td style="border: 1px solid black;padding: 5px;">Alert Only</td>
+      </tr>
+      <tr>
+         <td style="border: 1px solid black;padding: 5px;">Warning</td>
+         <td style="border: 1px solid black;padding: 5px;">All</td>
+         <td style="border: 1px solid black;padding: 5px;">4</td>
+         <td style="border: 1px solid black;padding: 5px;">Alert Only</td>
+      </tr>
+   </thead>
+</table>
