@@ -11,6 +11,5 @@ while(size > 0){
         }
     }
     size--;
+    console.log(arr);
 }
-
-console.log(arr);
