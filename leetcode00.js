@@ -12,6 +12,7 @@ return [0, 1].
 */
 
 var twoSum = function(nums, target) {
+    /*
     let newNums = nums.map((element) => {
         return target - element;
     });
@@ -21,6 +22,16 @@ var twoSum = function(nums, target) {
             if(i !== newNums.indexOf(nums[i])){
                 return [newNums.indexOf(nums[i]),i].sort();
             }
+        }
+    }
+    */
+
+    let newNums = nums.map(el => target - el);
+    
+    for(let i = 0; i < nums.length; i++){
+        let index = newNums.indexOf(nums[i]);
+        if((i != index) && (index > -1)){
+            return[index,i];
         }
     }
 };
