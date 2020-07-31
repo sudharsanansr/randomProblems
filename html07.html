@@ -1,0 +1,57 @@
+<!--Let's see how can we build a simple card for a user introduction-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Card</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <section class="bold-text" id="intro-name">
+            <h4>Sudharsanan Ravichandran</h4>
+        </section>
+        <section class="italic-text" id="intro-position">
+            <h6>Aspiring Web Developer & Consultant</h6>
+        </section>
+        <section class="normal-text" id="intro-about">
+            <article>
+                I work as a Senior Software Engineer at ServiceNow
+            </article>
+        </section>
+        <section class="reference-text" id="intro-email">
+            sudharsanv36@gmail.com
+        </section>
+    </div>
+</body>
+
+<style>
+    #wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid black;
+        border-radius:5px;
+    }
+
+    .bold-text{
+        font-style: bold;
+    }
+
+    .italic-text{
+        font-style: italic;
+    }
+
+    .normal-text > article{
+        text-decoration: underline;
+        text-transform: uppercase;
+    }
+
+    .reference-text{
+        color: blue;
+    }
+</style>
+
+</html>
