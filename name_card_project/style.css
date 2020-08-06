@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    backgound-color: rgb(29,161,242);
+}
+
+#name-card-wrapper {
+    height: 400px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start
+
+}
