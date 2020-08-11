@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    border-color: black;
+    border-style: border-box;
 }
 
 body {
@@ -13,5 +15,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content:flex-start
+}
 
+#name-card-bio {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start
+}
+
+#name-card-photo{
+    
 }
