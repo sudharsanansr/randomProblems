@@ -14,12 +14,7 @@ function getFinalOpenedDoors(numDoors) {
     let i;
     while(stepCount <= numDoors) {
         for(i = stepCount - 1; i < numDoors; i = i + stepCount){
-            if(arr[i]){
-                arr[i] = false
-            }
-            else{
-                arr[i] = true;
-            }
+            if(arr[i] == true) { arr[i] = false; } else { arr[i] = true; }
         }
         stepCount++;
     }
