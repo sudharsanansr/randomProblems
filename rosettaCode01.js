@@ -24,14 +24,14 @@ function getFinalOpenedDoors(numDoors) {
         stepCount++;
     }
 
-    console.log(arr.map((el,index) => {
+    return arr.map((el,index) => {
         if(Boolean(el)){
             return index + 1;
         }
-    }).filter(el => Boolean(el)));
+    }).filter(el => Boolean(el));
 }
 
-getFinalOpenedDoors(100);
+console.log(getFinalOpenedDoors(100));
 
 // 1,2,3,4,5,6,7,8,9,10 (+1)
 // 2,4,6,8,10 (+2)
