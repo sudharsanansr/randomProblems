@@ -13,7 +13,9 @@ function bubbleSort(arr){
     console.log("--- bubbleSort() start ---");
     console.log("Before Sort: "+arr);
     let size = arr.length;
+    let iteration = 0;
     while(size > 0){
+        iteration++;
         for(var i = 0; i < arr.length; i++){
             if(arr[i] > arr[i+1]){
                 let temp = arr[i];
@@ -24,6 +26,7 @@ function bubbleSort(arr){
         console.log("Array Iteration: "+arr);
         size--;
     }
+    console.log('iteration: '+iteration);
     console.log("After Sort: "+arr);
     console.log("--- bubbleSort() end ---");
 }
